@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h6 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+p {
+  margin: 10px 0;
+}
+img {
+  width: 100%;
+}
+.navbar {
+  background-color: #047aed;
+  color: white;
+  height: 120px;
+}
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+.navbar a {
+  color: white;
+  padding: 8px;
+  margin: 0 5px;
+}
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+.navbar .flex {
+  justify-content: space-between;
+}
+.logo {
+  border-bottom: 2px white solid;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.headerimage {
+  height: 105px;
+  width: 90px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: o 40px;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* overview */
+.overview {
+  background-color: white;
+  padding: 30px 15px;
+}
+.overview .grid {
+  display: grid;
+  grid-template-columns: 67% 33%;
+}
+.overview-services {
+  display: grid;
+  justify-content: center;
+}
+.overview-services h3 {
+  font-weight: bolder;
+}
+.overview-services ul {
+  list-style-type: square;
+  padding-left: 25px;
+}
+.overview-text {
+  border: 2px black solid;
+  border-bottom-right-radius: 1%;
+  border-top-right-radius: 10%;
+  padding: 15px;
+}
+
+/*Deptartments*/
+.departments {
+  text-align: center;
+  background-color: #047aed;
+  padding: 20px;
+}
+.departments h2 {
+  color: white;
+}
+.departments h4 {
+  font-weight: bolder;
+  color: black;
+}
+.departments img {
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+}
+.deptcard {
+  padding: 15px;
+  color: black;
+  background-color: white;
+  border-radius: 10%;
+  margin: 25px 10px 10px 10px;
+  transition: transform 0.3s ease-in;
+}
+.deptcard:hover {
+  background-color: grey;
+  transform: translateY(-20px);
+}
+.departments .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: navy;
+  color: white;
+  display: grid;
+}
+.footer nav {
+  text-align: center;
+}
+.footer div,
+nav {
+  text-align: center;
+}
+.footernav ul {
+  list-style-type: none;
+}
+.footernav a {
+  color: white;
+}
+.footernav a:hover {
+  border-bottom: 2px white solid;
+}
+.footer .grid {
+  display: grid;
+  grid-template-columns: 35% 22% 22% 21%;
+  margin: 0 5px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  min-width: 100%;
+}
+.social {
+  display: grid;
+  justify-items: center;
+}
+.social i {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  transition: transform 0.3s ease-in;
+}
+.social i:hover {
+  color: grey;
+  transform: translateX(15px);
+}
+
+/* Our team */
+.ourteam h2 {
+  text-align: center;
+}
+.carousel {
+  padding: 20px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+.carousel-slide {
+  display: flex;
+  width: fit-content;
+  height: 300px;
+}
+.carousel img {
+  height: 300px;
+  width: 300px;
+}
+#prevBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 5%;
+  font-size: 25px;
+  color: lightgrey;
+  cursor: pointer;
+}
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 25px;
+  color: lightgrey;
+  cursor: pointer;
+}
+
+/* Contact Us */
+.contactus .container h1,
+h5 {
+  margin: 10px;
+}
+.contactus .grid {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  flex-wrap: wrap;
+}
+#contactUsPic {
+  height: 400px;
+  width: 375px;
+}
+.leftImage {
+  padding: 20px;
+  justify-content: center;
+  align-content: center;
+}
+.contactForm {
+  border: 2px black solid;
+  padding: 20px 50px;
+  text-align: start;
+  margin: 7px;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .grid,
+  .contactus .grid,
+  .footer .grid,
+  .overview .grid {
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+  }
+}
+
+/* Phones */
+@media (max-width: 450px) {
+  .grid,
+  .contactus .grid,
+  .footer .grid,
+  .overview .grid {
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+  }
+}
